@@ -550,17 +550,25 @@
 			"name": "idx-metric",
 			"description": "",
 			"order": [
-				"1a4f1b43-1007-d482-e044-2fae4e774e40"
+				"1a4f1b43-1007-d482-e044-2fae4e774e40",
+				"27de7daa-058f-c471-e62e-7e77206552f0"
 			],
 			"folders": [],
 			"timestamp": 1432003245134,
 			"synced": false,
 			"remote_id": 0,
-			"owner": "",
+			"owner": 0,
 			"subscribed": false,
 			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
 			"public": false,
+			"createdAt": 1470429998383,
+			"updatedAt": 1470435379413,
 			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
 			"requests": [
 				{
 					"id": "1a4f1b43-1007-d482-e044-2fae4e774e40",
@@ -580,6 +588,26 @@
 					"description": "Service discovery document for idx-metric.",
 					"collectionId": "4655b878-26e9-a0de-de18-2a912d68fe66",
 					"responses": []
+				},
+				{
+					"id": "27de7daa-058f-c471-e62e-7e77206552f0",
+					"headers": "Authorization: Bearer {{session}}\nAccept: {{accepttype}}\n",
+					"url": "{{idx-metric}}/.well-known/healthcheck/vitals",
+					"pathVariables": {},
+					"preRequestScript": "",
+					"method": "GET",
+					"collectionId": "4655b878-26e9-a0de-de18-2a912d68fe66",
+					"data": [],
+					"dataMode": "params",
+					"name": "Vitals",
+					"description": "Vitals endpoint",
+					"descriptionFormat": "html",
+					"time": 1470435379391,
+					"version": 2,
+					"responses": [],
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {}
 				}
 			]
 		},
@@ -598,20 +626,46 @@
 				"3b72c630-58fa-cdf2-c276-0b5c3f084890",
 				"690a11e9-8504-44a5-c17e-ab0655cfa7ff",
 				"fb9cf7be-acdc-b2b0-172e-baed263662a1",
-				"e3c9e4e2-63c6-420c-c49b-eec5acbce278"
+				"e3c9e4e2-63c6-420c-c49b-eec5acbce278",
+				"07b1982e-ca49-4117-c59a-94faeb007521"
 			],
 			"folders": [],
 			"timestamp": 1424468900827,
 			"synced": false,
 			"remote_id": 0,
-			"owner": "",
+			"owner": 0,
 			"subscribed": false,
 			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": null,
-			"updatedAt": 1445614662118,
+			"updatedAt": 1470433714955,
 			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
 			"requests": [
+				{
+					"id": "07b1982e-ca49-4117-c59a-94faeb007521",
+					"headers": "Authorization: Bearer {{session}}\nAccept: {{accepttype}}\n",
+					"url": "{{idx-project}}/.well-known/healthcheck/vitals",
+					"pathVariables": {},
+					"preRequestScript": "",
+					"method": "GET",
+					"collectionId": "69fe279c-ca31-51f3-e00a-16d7d805366e",
+					"data": [],
+					"dataMode": "params",
+					"name": "Vitals",
+					"description": "Vitals endpoint",
+					"descriptionFormat": "html",
+					"time": 1470433714911,
+					"version": 2,
+					"responses": [],
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
 				{
 					"id": "25df627c-43b3-2402-177c-09301916cdfb",
 					"headers": "Authorization: Bearer {{session}}\nAccept: {{accepttype}}\n",
@@ -834,7 +888,8 @@
 				"312c6411-b2d5-310d-d2c9-95dcc685d460",
 				"aedad80d-93b0-d110-5d81-acf295b5015a",
 				"76f7b0bf-4ccc-f848-7410-832e11b26a93",
-				"2cb68476-c828-cc0b-302c-121986de0e11"
+				"2cb68476-c828-cc0b-302c-121986de0e11",
+				"0152d494-d748-c02a-9401-bb7036b3abbc"
 			],
 			"folders": [],
 			"timestamp": 1435294721499,
@@ -843,11 +898,36 @@
 			"owner": 0,
 			"subscribed": false,
 			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": null,
-			"updatedAt": 1464712019512,
+			"updatedAt": 1471629501175,
 			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
 			"requests": [
+				{
+					"id": "0152d494-d748-c02a-9401-bb7036b3abbc",
+					"headers": "Authorization: Bearer {{session}}\nAccept: text/csv\n",
+					"url": "{{idx-statistic}}/groups/{{groupid}}/directory",
+					"pathVariables": {},
+					"preRequestScript": null,
+					"method": "GET",
+					"collectionId": "7dcb9ab2-4717-0071-2a1d-06959d9c62d7",
+					"data": null,
+					"dataMode": "params",
+					"name": "Group Directory Report",
+					"description": "Group directory report",
+					"descriptionFormat": "html",
+					"time": 1471629501126,
+					"version": 2,
+					"responses": [],
+					"tests": null,
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
 				{
 					"id": "2cb68476-c828-cc0b-302c-121986de0e11",
 					"headers": "Authorization: Bearer {{session}}\nAccept: {{accepttypev2}}\nContent-Type: application/vnd.fs-idx-v2+xml\n",
@@ -1008,6 +1088,27 @@
 		{
 			"id": "bcd36fe3-0cce-cd94-41e1-b58eff958d13",
 			"name": "idx-template",
+			"description": "",
+			"order": [
+				"6239e7e6-1486-39b2-4a32-845052953d2f",
+				"dde47c37-8deb-e770-0bd3-29c1e653c74a"
+			],
+			"folders": [],
+			"timestamp": 1459887806270,
+			"synced": false,
+			"remote_id": 0,
+			"owner": "",
+			"subscribed": false,
+			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1469640834467,
+			"updatedAt": 1469666784638,
+			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
 			"requests": [
 				{
 					"id": "6239e7e6-1486-39b2-4a32-845052953d2f",
@@ -1027,12 +1128,28 @@
 					"description": "List of system templates",
 					"collectionId": "bcd36fe3-0cce-cd94-41e1-b58eff958d13",
 					"responses": []
+				},
+				{
+					"id": "dde47c37-8deb-e770-0bd3-29c1e653c74a",
+					"headers": "Accept: {{accepttype}}\n",
+					"url": "{{idx-template}}/.well-known/service-meta",
+					"pathVariables": {},
+					"preRequestScript": "",
+					"method": "GET",
+					"collectionId": "bcd36fe3-0cce-cd94-41e1-b58eff958d13",
+					"data": [],
+					"dataMode": "params",
+					"name": "Service Discovery",
+					"description": "Service Discovery",
+					"descriptionFormat": "html",
+					"time": 1469666784604,
+					"version": 2,
+					"responses": [],
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {}
 				}
-			],
-			"order": [
-				"6239e7e6-1486-39b2-4a32-845052953d2f"
-			],
-			"timestamp": 1459887806270
+			]
 		},
 		{
 			"id": "d2a8ba3d-ee2a-0548-3676-ac28f82b93d6",
@@ -1117,7 +1234,48 @@
 		{
 			"id": "e4eb222d-b2a4-07b7-96e1-1f7bc27da4fd",
 			"name": "idx-orchestration",
+			"description": "",
+			"order": [
+				"2abf9e11-fee8-d5a3-75bd-6f759a70acd7",
+				"29be29e9-4d21-39a4-bc64-9c061aa0336c"
+			],
+			"folders": [],
+			"timestamp": 1461096076175,
+			"synced": false,
+			"remote_id": 0,
+			"owner": "",
+			"subscribed": false,
+			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
+			"public": false,
+			"createdAt": 1469640834482,
+			"updatedAt": 1469671439899,
+			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
 			"requests": [
+				{
+					"id": "29be29e9-4d21-39a4-bc64-9c061aa0336c",
+					"headers": "Authorization: Bearer {{session}}\nAccept: {{accepttype}}\n",
+					"url": "{{idx-orchestration}}/.well-known/service-meta",
+					"pathVariables": {},
+					"preRequestScript": "",
+					"method": "GET",
+					"collectionId": "e4eb222d-b2a4-07b7-96e1-1f7bc27da4fd",
+					"data": [],
+					"dataMode": "params",
+					"name": "Service Discovery",
+					"description": "Service discovery document for idx-orchestration.",
+					"descriptionFormat": "html",
+					"time": 1469671439878,
+					"version": 2,
+					"responses": [],
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
 				{
 					"id": "2abf9e11-fee8-d5a3-75bd-6f759a70acd7",
 					"headers": "Authorization: Bearer {{session}}\nAccept: {{accepttype}}\nContent-Type: application/xml\n",
@@ -1137,11 +1295,7 @@
 					"collectionId": "e4eb222d-b2a4-07b7-96e1-1f7bc27da4fd",
 					"responses": []
 				}
-			],
-			"order": [
-				"2abf9e11-fee8-d5a3-75bd-6f759a70acd7"
-			],
-			"timestamp": 1461096076175
+			]
 		},
 		{
 			"id": "e9e5420c-e981-ad99-adfb-939c44e56102",
@@ -1151,7 +1305,8 @@
 				"4dd06a10-0848-5c1e-cb2b-27d179b347de",
 				"a48f0ee6-781a-bb45-76b0-5325f88d7175",
 				"7a889e35-4ec4-e120-8086-2bc665e6bb6a",
-				"3b0139f1-de4b-1be1-8822-ed488774ee6b"
+				"3b0139f1-de4b-1be1-8822-ed488774ee6b",
+				"1e63c4a6-4be6-1468-6291-cbe10d469cfd"
 			],
 			"folders": [],
 			"timestamp": 1424470839606,
@@ -1160,11 +1315,36 @@
 			"owner": 0,
 			"subscribed": false,
 			"remoteLink": "",
+			"remoteLinkUpdatedAt": null,
 			"public": false,
 			"createdAt": null,
-			"updatedAt": 1464822873586,
+			"updatedAt": 1470437812202,
 			"write": true,
+			"published": false,
+			"favorite": false,
+			"permissions": {},
+			"syncedPermissions": {},
 			"requests": [
+				{
+					"id": "1e63c4a6-4be6-1468-6291-cbe10d469cfd",
+					"headers": "Accept: {{accepttype}}\n",
+					"url": "{{idx-workflow}}/.well-known/healthcheck/vitals",
+					"pathVariables": {},
+					"preRequestScript": "",
+					"method": "GET",
+					"collectionId": "e9e5420c-e981-ad99-adfb-939c44e56102",
+					"data": [],
+					"dataMode": "params",
+					"name": "Vitals",
+					"description": "Vitals endpoint",
+					"descriptionFormat": "html",
+					"time": 1470437812152,
+					"version": 2,
+					"responses": [],
+					"tests": "",
+					"currentHelper": "normal",
+					"helperAttributes": {}
+				},
 				{
 					"id": "3b0139f1-de4b-1be1-8822-ed488774ee6b",
 					"headers": "Authorization: Bearer {{session}}\nAccept: text/uuid-list\n",
@@ -1269,91 +1449,348 @@
 			"synced": false
 		},
 		{
-			"id": "65101286-b562-c134-6e3e-87cbf98e345f",
-			"name": "local",
+			"id": "b22555bc-834c-63a7-cc20-30f5e067879b",
+			"name": "beta (SG)",
 			"values": [
 				{
-					"key": "idx-discovery",
-					"value": "http://localhost:8080/idx-discovery",
-					"type": "text",
-					"name": "idx-discovery",
-					"enabled": true,
-					"hovered": false
-				},
-				{
 					"key": "session",
-					"value": "USYS551F1A0F473FC8DB70586FBC0F146982_idses-refa01.a.fsglobal.net",
+					"value": "USYS5B32E935DD80A693806BF890B7F66EDA_idses-refa08.a.fsglobal.net",
 					"type": "text",
 					"name": "session",
 					"enabled": true,
 					"hovered": false
 				},
 				{
-					"key": "idx-user",
-					"value": "http://localhost:8080/idx-user",
+					"key": "roleid",
+					"value": "506feeb7-1dee-11e6-8d72-0aa9f500d3b5",
 					"type": "text",
-					"name": "idx-user",
+					"name": "roleid",
 					"enabled": true,
 					"hovered": false
 				},
 				{
-					"key": "idx-metric",
-					"value": "http://localhost:8080/idx-metric",
+					"key": "rolenames",
+					"value": "SUPER_ADMIN",
 					"type": "text",
-					"name": "idx-metric",
-					"enabled": false,
-					"hovered": false
-				},
-				{
-					"key": "idx-statistic",
-					"value": "http://localhost:8080/idx-statistic",
-					"type": "text",
-					"name": "idx-statistic",
+					"name": "rolenames",
 					"enabled": true,
 					"hovered": false
 				},
 				{
 					"key": "userid",
-					"value": "86e2e915-603a-4a6b-9b25-01eb11e98d8a",
+					"value": "9f3dade5-3bb8-3d7b-915c-4e500e901502",
 					"type": "text",
 					"name": "userid",
 					"enabled": true,
 					"hovered": false
 				},
 				{
-					"key": "groupid",
-					"value": "af0072e8-2346-4f18-98b0-83c4e9cd20ca",
+					"key": "userCISID",
+					"value": "cis.user.MMM4-KP61",
 					"type": "text",
-					"name": "groupid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "username",
+					"value": "fransonsr",
+					"type": "text",
+					"name": "username",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "projectid",
+					"value": "caf3c10f-c43c-444a-ad10-8e22b4fc3de8",
+					"type": "text",
+					"name": "projectid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "batchid",
+					"value": "9b1f3ef6-4c8a-452e-a164-0fd266fd07f9",
+					"type": "text",
+					"name": "batchid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "groupid",
+					"value": "6ad48d52-14ab-4a44-9c61-963d72f7c5d5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "imageid",
+					"value": "f246ced0-f953-4ec2-8af5-bed8461d45b5",
+					"type": "text",
+					"name": "imageid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "servicerequestid",
+					"value": "28414",
+					"type": "text",
+					"name": "servicerequestid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "resourceid",
+					"value": "4e3b702b-59d6-4f74-b4a7-1e0acfd1e0d6",
+					"type": "text",
+					"name": "resourceid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-statistic",
+					"value": "https://beta.familysearch.org/indexing-service/statistic",
+					"type": "text",
+					"name": "idx-statistic",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-user",
+					"value": "https://beta.familysearch.org/indexing-service/user",
+					"type": "text",
+					"name": "idx-user",
 					"enabled": true,
 					"hovered": false
 				},
 				{
 					"key": "idx-project",
-					"value": "http://localhost:8080/idx-project",
+					"value": "https://beta.familysearch.org/indexing-service/project",
 					"type": "text",
 					"name": "idx-project",
 					"enabled": true,
 					"hovered": false
 				},
 				{
-					"key": "contactName",
-					"value": "Scott Franson",
+					"key": "idx-workflow",
+					"value": "https://beta.familysearch.org/indexing-service/workflow",
 					"type": "text",
-					"name": "contactName",
+					"name": "idx-workflow",
 					"enabled": true,
 					"hovered": false
 				},
 				{
-					"key": "idx-orchestration",
-					"value": "http://localhost:8080/idx-orchestration",
+					"key": "idx-discovery",
+					"value": "https://sg30p0.familysearch.org/indexing-service/discovery",
+					"type": "text",
+					"name": "idx-discovery",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "cmp-mailbox",
+					"value": "https://beta.familysearch.org/fst/mailbox",
+					"type": "text",
+					"name": "cmp-mailbox",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-message",
+					"value": "https://beta.familysearch.org/indexing-service/message",
+					"type": "text",
+					"name": "idx-message",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-metric",
+					"value": "https://beta.familysearch.org/indexing-service/metric",
+					"type": "text",
+					"name": "idx-metric",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-template",
+					"value": "https://beta.familysearch.org/indexing-service/template",
 					"type": "text",
 					"enabled": true,
 					"hovered": false
 				}
 			],
 			"team": null,
-			"timestamp": 1465340376829
+			"timestamp": 1469056660489
+		},
+		{
+			"id": "f519bdc7-e4f8-a1da-a7be-57478f673e6f",
+			"name": "beta (CNAME)",
+			"values": [
+				{
+					"key": "session",
+					"value": "USYS5B32E935DD80A693806BF890B7F66EDA_idses-refa08.a.fsglobal.net",
+					"type": "text",
+					"name": "session",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "roleid",
+					"value": "506feeb7-1dee-11e6-8d72-0aa9f500d3b5",
+					"type": "text",
+					"name": "roleid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "rolenames",
+					"value": "SUPER_ADMIN",
+					"type": "text",
+					"name": "rolenames",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "userid",
+					"value": "9f3dade5-3bb8-3d7b-915c-4e500e901502",
+					"type": "text",
+					"name": "userid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "userCISID",
+					"value": "cis.user.MMM4-KP61",
+					"type": "text",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "username",
+					"value": "fransonsr",
+					"type": "text",
+					"name": "username",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "projectid",
+					"value": "caf3c10f-c43c-444a-ad10-8e22b4fc3de8",
+					"type": "text",
+					"name": "projectid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "batchid",
+					"value": "9b1f3ef6-4c8a-452e-a164-0fd266fd07f9",
+					"type": "text",
+					"name": "batchid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "groupid",
+					"value": "6ad48d52-14ab-4a44-9c61-963d72f7c5d5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "imageid",
+					"value": "f246ced0-f953-4ec2-8af5-bed8461d45b5",
+					"type": "text",
+					"name": "imageid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "servicerequestid",
+					"value": "28414",
+					"type": "text",
+					"name": "servicerequestid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "resourceid",
+					"value": "4e3b702b-59d6-4f74-b4a7-1e0acfd1e0d6",
+					"type": "text",
+					"name": "resourceid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-statistic",
+					"value": "https://beta.familysearch.org/indexing-service/statistic",
+					"type": "text",
+					"name": "idx-statistic",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-user",
+					"value": "https://beta.familysearch.org/indexing-service/user",
+					"type": "text",
+					"name": "idx-user",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-project",
+					"value": "https://beta.familysearch.org/indexing-service/project",
+					"type": "text",
+					"name": "idx-project",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-workflow",
+					"value": "https://beta.familysearch.org/indexing-service/workflow",
+					"type": "text",
+					"name": "idx-workflow",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-discovery",
+					"value": "http://discovery.indexing-service.beta.us-east-1.test.fslocal.org/",
+					"type": "text",
+					"name": "idx-discovery",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "cmp-mailbox",
+					"value": "https://beta.familysearch.org/fst/mailbox",
+					"type": "text",
+					"name": "cmp-mailbox",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-message",
+					"value": "https://beta.familysearch.org/indexing-service/message",
+					"type": "text",
+					"name": "idx-message",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-metric",
+					"value": "https://beta.familysearch.org/indexing-service/metric",
+					"type": "text",
+					"name": "idx-metric",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-template",
+					"value": "https://beta.familysearch.org/indexing-service/template",
+					"type": "text",
+					"enabled": true,
+					"hovered": false
+				}
+			],
+			"team": null,
+			"timestamp": 1469056700382
 		},
 		{
 			"id": "92aac035-3d1f-f233-14ba-068eaab8acdd",
@@ -1361,14 +1798,14 @@
 			"values": [
 				{
 					"key": "session",
-					"value": "USYS0D314266BA33005D840FB6B84227C831_idses-prod05.a.fsglobal.net",
+					"value": "USYS2F75E786EDDDF5C50CBCAE185B87292D_idses-prod03.a.fsglobal.net",
 					"type": "text",
 					"enabled": true,
 					"hovered": false
 				},
 				{
 					"key": "roleid",
-					"value": "32b8c46e-e23e-11e1-b3aa-9439abcdef32",
+					"value": "6da6ad13-f0ba-11e3-b64a-0abc4ff1fc2b",
 					"type": "text",
 					"enabled": true,
 					"hovered": false
@@ -1382,14 +1819,14 @@
 				},
 				{
 					"key": "userid",
-					"value": "9f3dade5-3bb8-3d7b-915c-4e500e901502",
+					"value": "32c6c476-79d7-4e04-90e0-3866ca1c46c6",
 					"type": "text",
 					"enabled": true,
 					"hovered": false
 				},
 				{
 					"key": "username",
-					"value": "randyhem",
+					"value": "fransonsr2",
 					"type": "text",
 					"enabled": true,
 					"hovered": false
@@ -1403,14 +1840,14 @@
 				},
 				{
 					"key": "batchid",
-					"value": "cf47052c-e75c-4942-a63b-465b003dfdc7",
+					"value": "94f55d29-8abb-4227-8053-1948e6e694e2",
 					"type": "text",
 					"enabled": true,
 					"hovered": false
 				},
 				{
 					"key": "imageid",
-					"value": "f246ced0-f953-4ec2-8af5-bed8461d45b5",
+					"value": "cff614d4-0d0b-4c4e-9808-22813f5e7be3",
 					"type": "text",
 					"enabled": true,
 					"hovered": false
@@ -1498,10 +1935,121 @@
 					"type": "text",
 					"enabled": true,
 					"hovered": false
+				},
+				{
+					"key": "idx-orchestration",
+					"value": "https://familysearch.org/indexing-service/orchestration",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1466023161448
+			"timestamp": 1470846568208
+		},
+		{
+			"id": "65101286-b562-c134-6e3e-87cbf98e345f",
+			"name": "local",
+			"values": [
+				{
+					"key": "session",
+					"value": "USYS3DA8B8A107C0BAC11DEF19A1106B0B78_idses-refa04.a.fsglobal.net",
+					"type": "text",
+					"name": "session",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "userid",
+					"value": "86e2e915-603a-4a6b-9b25-01eb11e98d8a",
+					"type": "text",
+					"name": "userid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "userCISID",
+					"value": "cis.user.MMMW-KFXM",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contactName",
+					"value": "Scott Franson",
+					"type": "text",
+					"name": "contactName",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "groupid",
+					"value": "3b03b8cd-4a4e-47e7-8cab-188f9ed5b9f9",
+					"type": "text",
+					"name": "groupid",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-discovery",
+					"value": "http://localhost:8080/idx-discovery",
+					"type": "text",
+					"name": "idx-discovery",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-user",
+					"value": "http://localhost:8080/idx-user",
+					"type": "text",
+					"name": "idx-user",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-metric",
+					"value": "http://localhost:8080/idx-metric",
+					"type": "text",
+					"name": "idx-metric",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-statistic",
+					"value": "http://localhost:8080/idx-statistic",
+					"type": "text",
+					"name": "idx-statistic",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-project",
+					"value": "http://localhost:8080/idx-project",
+					"type": "text",
+					"name": "idx-project",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-orchestration",
+					"value": "http://localhost:8080/idx-orchestration",
+					"type": "text",
+					"enabled": true,
+					"hovered": false
+				},
+				{
+					"key": "idx-workflow",
+					"value": "http://localhost:8080/idx-workflow",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "idx-template",
+					"value": "http://localhost:8080/idx-template",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"team": null,
+			"timestamp": 1471640307519
 		},
 		{
 			"id": "993706a2-4fc3-999d-0567-a685eca2276b",
@@ -1509,7 +2057,7 @@
 			"values": [
 				{
 					"key": "session",
-					"value": "USYS2E62FD4FBF5D63BC646FDA5347FB4C29_idses-refa08.a.fsglobal.net",
+					"value": "USYS3DA8B8A107C0BAC11DEF19A1106B0B78_idses-refa04.a.fsglobal.net",
 					"type": "text",
 					"name": "session",
 					"enabled": true,
@@ -1517,7 +2065,7 @@
 				},
 				{
 					"key": "roleid",
-					"value": "32b8c46e-e23e-11e1-b3aa-9439abcdef32",
+					"value": "506feeb7-1dee-11e6-8d72-0aa9f500d3b5",
 					"type": "text",
 					"name": "roleid",
 					"enabled": true,
@@ -1533,7 +2081,7 @@
 				},
 				{
 					"key": "userid",
-					"value": "9f3dade5-3bb8-3d7b-915c-4e500e901502",
+					"value": "070ab1fe-0105-4e87-8dae-4c65b9a763a7",
 					"type": "text",
 					"name": "userid",
 					"enabled": true,
@@ -1541,14 +2089,14 @@
 				},
 				{
 					"key": "userCISID",
-					"value": "cis.user.MM9N-NM46",
+					"value": "cis.user.MMM4-KP61",
 					"type": "text",
 					"enabled": true,
 					"hovered": false
 				},
 				{
 					"key": "username",
-					"value": "vhilton",
+					"value": "gt_test54",
 					"type": "text",
 					"name": "username",
 					"enabled": true,
@@ -1556,7 +2104,7 @@
 				},
 				{
 					"key": "projectid",
-					"value": "caf3c10f-c43c-444a-ad10-8e22b4fc3de8",
+					"value": "173609ee-8895-4f8e-9d1a-129f5bf16c6a",
 					"type": "text",
 					"name": "projectid",
 					"enabled": true,
@@ -1564,7 +2112,7 @@
 				},
 				{
 					"key": "batchid",
-					"value": "4ea9897d-2c24-4ee0-b8f8-62ea8405cfdd",
+					"value": "aa8f51e7-97c1-4adc-a226-d291a63da84d",
 					"type": "text",
 					"name": "batchid",
 					"enabled": true,
@@ -1670,10 +2218,16 @@
 					"type": "text",
 					"enabled": true,
 					"hovered": false
+				},
+				{
+					"key": "contactName",
+					"value": "Franson",
+					"type": "text",
+					"enabled": true
 				}
 			],
 			"team": null,
-			"timestamp": 1468003504533
+			"timestamp": 1471642480721
 		}
 	],
 	"headerPresets": [
